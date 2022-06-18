@@ -1,0 +1,65 @@
+.home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.homeContainer {
+  width: 700px;
+  background-color: #fff;
+}
+
+.homeContainer li {
+  padding: 10px;
+  list-style: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.metaContainer {
+  display: flex;
+  color: #86909c;
+}
+
+.date {
+  position: relative;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.date::before,
+.date::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: #e5e6eb;
+  content: " ";
+}
+
+.date::before {
+  left: 0;
+}
+.date::after {
+  right: 0;
+}
+
+.tagList span {
+  position: relative;
+  margin-right: 10px;
+}
+
+.tagList span:not(:last-child):after {
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  display: block;
+  content: " ";
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #4e5969;
+}

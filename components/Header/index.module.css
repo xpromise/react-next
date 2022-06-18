@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.header a {
+  margin: 0 20px;
+}
